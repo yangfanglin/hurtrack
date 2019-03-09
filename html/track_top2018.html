@@ -1,0 +1,628 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>NCEP EMC Global Model Verification</title>
+</head>
+
+<body background="../icons/white_blu.gif" text="#000000"
+link="#000000" vlink="#000000" alink="#000000">
+
+<SCRIPT TYPE="text/javascript">
+<!--
+function popup(mylink, windowname)
+{
+if (! window.focus)return true;
+var href;
+if (typeof(mylink) == 'string')
+   href=mylink;
+else
+   href=mylink.href;
+window.open(href, windowname, 'width=900,height=900,scrollbars=yes');
+return false;
+}
+//-->
+</SCRIPT>
+
+
+<div align="center"><center>
+
+
+<table border="0" cellspacing="0" bgcolor="" bordercolor="#000000" 
+       bordercolordark="#000000" bordercolorlight="#C0C0C0">
+<tr>
+
+  <td>
+     <font size="3" face="Comic Sans MS" color="blue">
+     <strong> Hurricane Track <br> and Intensity   </strong> </font>
+  </td>
+  <td> <font color="white">.......... </font></td>
+
+  <td>
+   <table border="1" cellspacing="1" bgcolor="" bordercolor="#000000" 
+       bordercolordark="#000000" bordercolorlight="#C0C0C0">
+    <tr>
+        <td> <font size=2 color="blue" face="Comic Sans MS"><strong>  Mean Track </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> Atlantic </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> East Pacific </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> Central Pacific </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> West Pacific </strong></font></a></td>
+    </tr>
+    <tr>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> track </strong></font></a></td>
+        <td> <a  href="../../track/tracks_al.t.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> plot </font></a><br>
+        <td> <a  href="../../track/tracks_ep.t.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> plot </font></a><br>
+        <td> <a  href="../../track/tracks_cp.t.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> plot </font></a><br>
+        <td> <a  href="../../track/tracks_wp.t.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> plot </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> intensity </strong></font></a></td>
+        <td> <a  href="../../track/tracks_al.i.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> plot </font></a><br>
+        <td> <a  href="../../track/tracks_ep.i.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> plot </font></a><br>
+        <td> <a  href="../../track/tracks_cp.i.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> plot </font></a><br>
+        <td> <a  href="../../track/tracks_wp.i.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> plot </font></a><br>
+    </tr>
+   </table>
+   </td>
+   <td> <font color="white">..... </font></td>
+   <td>
+   <table border="1" cellspacing="1" bgcolor="" bordercolor="#000000"
+       bordercolordark="#000000" bordercolorlight="#C0C0C0">
+    <tr>
+        <td> <font size=2 color="blue" face="Comic Sans MS"><strong>  Mean Track </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> Atlantic </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> East Pacific </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> Central Pacific </strong></font></a></td>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> West Pacific </strong></font></a></td>
+    </tr>
+    <tr>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> track </strong></font></a></td>
+        <td> <a  href="../../track/tracks_al.t.txt" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> text </font></a><br>
+        <td> <a  href="../../track/tracks_ep.t.txt" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> text </font></a><br>
+        <td> <a  href="../../track/tracks_cp.t.txt" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> text </font></a><br>
+        <td> <a  href="../../track/tracks_wp.t.txt" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> text </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="red" face="Comic Sans MS"><strong> intensity </strong></font></a></td>
+        <td> <a  href="../../track/tracks_al.i.txt" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> text </font></a><br>
+        <td> <a  href="../../track/tracks_ep.i.txt" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> text </font></a><br>
+        <td> <a  href="../../track/tracks_cp.i.txt" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> text </font></a><br>
+        <td> <a  href="../../track/tracks_wp.i.txt" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> text </font></a><br>
+    </tr>
+   </table>
+  </td>
+  <td><font color=white>....</font></td>
+</table>
+
+
+<table border="1" cellspacing="1" bgcolor="" bordercolor="#000000" 
+       bordercolordark="#000000" bordercolorlight="#C0C0C0">
+    <tr>
+    <td> <font size=2 color="blue" face="Comic Sans MS"><strong>  Atlantic Storms </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Alberto  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Beryl  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Chris  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Debby  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Ernesto   </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Florence   </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Gordon   </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Helene   </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Isaac   </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Joyce   </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Kirk   </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Leslie   </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Michael   </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Nadine   </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Oscar </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Patty   </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Rafael   </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Sara   </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Tony   </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Valerie   </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> William   </strong></font></a></td>
+    </tr>
+
+    <tr>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> mean track </strong></font></a></td>
+    <td> <a href="../../track/tracks_Alberto.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Beryl.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Chris.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Debby.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Ernesto.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Florence.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Gordon.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Helene.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Isaac.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Joyce.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Kirk.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Leslie.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Michael.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Nadine.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Oscar.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Patty.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Rafael.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Sara.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Tony.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Valerie.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_William.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    </tr>
+
+    <tr>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> mean intensity </strong></font></a></td>
+    <td> <a href="../../track/tracks_Alberto.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Beryl.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Chris.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Debby.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Ernesto.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Florence.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Gordon.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Helene.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Isaac.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Joyce.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Kirk.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Leslie.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Michael.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Nadine.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Oscar.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Patty.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Rafael.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Sara.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Tony.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Valerie.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_William.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    </tr>
+
+    <tr>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> real track </strong></font></a></td>
+    <td> <a href="../../track/tracks_Alberto" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Beryl" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Chris" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Debby" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Ernesto" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Florence" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Gordon" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Helene" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Isaac" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Joyce" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Kirk" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Leslie" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Michael" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Nadine" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Oscar" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Patty" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Rafael" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Sara" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Tony" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_Valerie" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a href="../../track/tracks_William" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    </tr>
+</table>
+
+<br>
+
+<table border="1" cellspacing="1" bgcolor="" bordercolor="#000000" 
+       bordercolordark="#000000" bordercolorlight="#C0C0C0">
+    <tr>
+    <td> <font size=2 color="blue" face="Comic Sans MS"><strong> East Pacific Storms </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Aletta </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Bud </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Carlotta </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Daniel </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Emilia </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Fabio </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Gilma </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Hector </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Ileana  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> John  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Kristy  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Lane  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Miriam  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Norman  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Olivia  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Paul  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Rosa  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Sergio  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Walaka  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Tara  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Vicente </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Willa  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Xavier  </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Yolanda </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> Zeke  </strong></font></a></td>
+    </tr>
+
+    <tr>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> track </strong></font></a></td>
+    <td> <a  href="../../track/tracks_Aletta.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Bud.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Carlotta.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Daniel.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Emilia.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Fabio.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Gilma.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Hector.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Ileana.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_John.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Kristy.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Lane.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Miriam.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Norman.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Olivia.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Paul.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Rosa.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Sergio.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Walaka.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Tara.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Vicente.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Willa.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Xavier.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Yolanda.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Zeke.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    </tr>
+
+
+    <tr>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> intensity </strong></font></a></td>
+    <td> <a  href="../../track/tracks_Aletta.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Bud.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Carlotta.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Daniel.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Emilia.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Fabio.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Gilma.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Hector.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Ileana.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_John.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Kristy.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Lane.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Miriam.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Norman.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Olivia.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Paul.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Rosa.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Sergio.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Walaka.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Tara.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Vicente.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Willa.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Xavier.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Yolanda.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Zeke.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    </tr>
+
+    <tr>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> real track </strong></font></a></td>
+    <td> <a  href="../../track/tracks_Aletta" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Bud" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Carlotta" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Daniel" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Emilia" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Fabio" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Gilma" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Hector" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Ileana" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_John" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Kristy" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Lane" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Miriam" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Norman" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Olivia" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Paul" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Rosa" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Sergio" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Tara" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Vicente" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Willa" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Xavier" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Yolanda" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Zeke" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    </tr>
+</table>
+
+<br>
+
+<table border="1" cellspacing="1" bgcolor="" bordercolor="#000000" 
+       bordercolordark="#000000" bordercolorlight="#C0C0C0">
+    <tr>
+    <td> <font size=2 color="blue" face="Comic Sans MS"><strong>  West Pacific Storms </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Bolaven </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Sanba </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Jelawat </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Ewiniar </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Maliksi </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Gaemi </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Prapiroon </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Maria </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Son-Tinh </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Ampil </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Wukong </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Jongdari </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Shanshan </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Yagi </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Bebinca </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Leepi </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Bebinca </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Hector </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Rumbia </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Soulik </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Cimaron </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Jebi </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Mangkhut </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Barijat </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Trami </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Kong-rey </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Yutu </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Toraji </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Usagi </strong></font></a></td>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong>  Man-yi </strong></font></a></td>
+    </tr>
+
+    <tr>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> mean track </strong></font></a></td>
+    <td> <a  href="../../track/tracks_Bolaven.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Sanba.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Jelawat.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Ewiniar.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Maliksi.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Gaemi.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Prapiroon.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Maria.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Son-Tinh.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Ampil.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Wukong.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Sonamu.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Shanshan.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Yagi.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Bebinca.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Leepi.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Bebinca.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Hector.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Rumbia.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Soulik.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Cimaron.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Jebi.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Mangkhut.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Barijat.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Trami.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Kong-rey.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Yutu.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Toraji.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Usagi.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Man-yi.t.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    </tr>
+
+    <tr>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> mean intensity </strong></font></a></td>
+    <td> <a  href="../../track/tracks_Bolaven.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Sanba.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Jelawat.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Ewiniar.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Maliksi.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Gaemi.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Prapiroon.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Maria.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Son-Tinh.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Ampil.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Wukong.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Jongdari.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Shanshan.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Yagi.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Bebinca.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Leepi.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Bebinca.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Hector.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Rumbia.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Soulik.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Cimaron.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Jebi.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Mangkhut.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Barijat.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Trami.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Kong-rey.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Yutu.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Toraji.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Usagi.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Man-yi.i.gif" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+
+    </tr>
+
+    <tr>
+    <td> <font size=2 color="red" face="Comic Sans MS"><strong> real track </strong></font></a></td>
+    <td> <a  href="../../track/tracks_Bolaven" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Sanba" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Jelawat" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Ewiniar" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Maliksi" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Gaemi" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Prapiroon" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Maria" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Son-Tinh" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Bopha" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Wukong" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Jongdari" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Shanshan" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Yagi" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Leepi" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Bebinca" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Rumbia" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Soulik" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Cimaron" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Jebi" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Mangkhut" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Utor" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Trami" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Yutu" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Toraji" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Usagi" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+    <td> <a  href="../../track/tracks_Man-yi" onClick="return popup(this, 'frame4')">   <font size=2 face="Comic Sans MS"> X </font></a><br>
+
+    </tr>
+</table>
+
+<br>
+<!-------------------- indidual storm track --------------------------------------------
+
+<table border="1" cellspacing="3" bgcolor="" bordercolor="#000000" 
+       bordercolordark="#000000" bordercolorlight="#C0C0C0">
+    <tr>
+        <td> <font size=2 color="blue" face="Comic Sans MS"><strong> Dennis </strong></font></a></td>
+        <td> <a  href="../../track/al042005.2005070500.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 05 </font></a><br>
+        <td> <a  href="../../track/al042005.2005070600.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 06 </font></a><br>
+        <td> <a  href="../../track/al042005.2005070700.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 07 </font></a><br>
+        <td> <a  href="../../track/al042005.2005070800.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 08 </font></a><br>
+        <td> <a  href="../../track/al042005.2005070900.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 09 </font></a><br>
+        <td> <a  href="../../track/al042005.2005071000.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 10 </font></a><br>
+        <td> <a  href="../../track/al042005.2005071100.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 11 </font></a><br>
+        <td> <a  href="../../track/tracks_Dennis.t.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> <b>avg</b> </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="blue" face="Comic Sans MS"><strong>Emily </strong></font></a></td>
+        <td> <a  href="../../track/al052005.2005071100.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 11 </font></a><br>
+        <td> <a  href="../../track/al052005.2005071200.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 12 </font></a><br>
+        <td> <a  href="../../track/al052005.2005071300.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 13 </font></a><br>
+        <td> <a  href="../../track/al052005.2005071400.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 14 </font></a><br>
+        <td> <a  href="../../track/al052005.2005071500.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 15 </font></a><br>
+        <td> <a  href="../../track/al052005.2005071600.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 16 </font></a><br>
+        <td> <a  href="../../track/al052005.2005071700.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 17 </font></a><br>
+        <td> <a  href="../../track/al052005.2005071800.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 18 </font></a><br>
+        <td> <a  href="../../track/al052005.2005071900.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 19 </font></a><br>
+        <td> <a  href="../../track/al052005.2005072000.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 20 </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="blue" face="Comic Sans MS"><strong>Franklin </strong></font></a></td>
+        <td> <a  href="../../track/al062005.2005072200.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 22 </font></a><br>
+        <td> <a  href="../../track/al062005.2005072300.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 23 </font></a><br>
+        <td> <a  href="../../track/al062005.2005072400.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 24 </font></a><br>
+        <td> <a  href="../../track/al062005.2005072500.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 25 </font></a><br>
+        <td> <a  href="../../track/al062005.2005072600.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 26 </font></a><br>
+        <td> <a  href="../../track/al062005.2005072700.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 27 </font></a><br>
+        <td> <a  href="../../track/al062005.2005072800.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 28 </font></a><br>
+        <td> <a  href="../../track/al062005.2005072900.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 29 </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="blue" face="Comic Sans MS"><strong>Harvey </strong></font></a></td>
+        <td> <a  href="../../track/al082005.2005080300.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 03 </font></a><br>
+        <td> <a  href="../../track/al082005.2005080400.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 04 </font></a><br>
+        <td> <a  href="../../track/al082005.2005080500.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 05 </font></a><br>
+        <td> <a  href="../../track/al082005.2005080600.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 06 </font></a><br>
+        <td> <a  href="../../track/al082005.2005080700.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 07 </font></a><br>
+        <td> <a  href="../../track/al082005.2005080800.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 08 </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="blue" face="Comic Sans MS"><strong>Irene </strong></font></a></td>
+        <td> <a  href="../../track/al092005.2005080500.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 05 </font></a><br>
+        <td> <a  href="../../track/al092005.2005080600.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 06 </font></a><br>
+        <td> <a  href="../../track/al092005.2005080700.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 07 </font></a><br>
+        <td> <a  href="../../track/al092005.2005080800.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 08 </font></a><br>
+        <td> <a  href="../../track/al092005.2005080900.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 09 </font></a><br>
+        <td> <a  href="../../track/al092005.2005081000.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 10 </font></a><br>
+        <td> <a  href="../../track/al092005.2005081100.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 11 </font></a><br>
+        <td> <a  href="../../track/al092005.2005081200.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 12 </font></a><br>
+        <td> <a  href="../../track/al092005.2005081300.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 13 </font></a><br>
+        <td> <a  href="../../track/al092005.2005081400.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 14 </font></a><br>
+        <td> <a  href="../../track/al092005.2005081500.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 15 </font></a><br>
+        <td> <a  href="../../track/al092005.2005081600.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 16 </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="blue" face="Comic Sans MS"><strong>Katrina </strong></font></a></td>
+        <td> <a  href="../../track/al122005.2005082400.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 24 </font></a><br>
+        <td> <a  href="../../track/al122005.2005082500.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 25 </font></a><br>
+        <td> <a  href="../../track/al122005.2005082600.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 26 </font></a><br>
+        <td> <a  href="../../track/al122005.2005082700.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 27 </font></a><br>
+        <td> <a  href="../../track/al122005.2005082800.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 28 </font></a><br>
+        <td> <a  href="../../track/al122005.2005082900.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 29 </font></a><br>
+        <td> <a  href="../../track/al122005.2005083000.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 30 </font></a><br>
+        <td> <a  href="../../track/tracks_Katrina.t.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> <b>avg</b> </font></a><br>
+    </tr>
+</table></td>
+
+<td>&nbsp;&nbsp;&nbsp;</td>                                                                                                                                           
+
+
+<td><table border="1" cellspacing="3" bgcolor="" bordercolor="#000000" 
+       bordercolordark="#000000" bordercolorlight="#C0C0C0">
+    <tr>
+        <td> <font size=2 color="blue" face="Comic Sans MS"><strong>Maria </strong></font></a></td>
+        <td> <a  href="../../track/al142005.2005090112.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 01 </font></a><br>
+        <td> <a  href="../../track/al142005.2005090200.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 02 </font></a><br>
+        <td> <a  href="../../track/al142005.2005090300.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 03 </font></a><br>
+        <td> <a  href="../../track/al142005.2005090400.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 04 </font></a><br>
+        <td> <a  href="../../track/al142005.2005090500.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 05 </font></a><br>
+        <td> <a  href="../../track/al142005.2005090600.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 06 </font></a><br>
+        <td> <a  href="../../track/al142005.2005090700.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 07 </font></a><br>
+        <td> <a  href="../../track/al142005.2005090800.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 08 </font></a><br>
+        <td> <a  href="../../track/al142005.2005090900.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 09 </font></a><br>
+        <td> <a  href="../../track/al142005.2005091000.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 10 </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="blue" face="Comic Sans MS"><strong>Nate </strong></font></a></td>
+        <td> <a  href="../../track/al152005.2005090600.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 06 </font></a><br>
+        <td> <a  href="../../track/al152005.2005090700.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 07 </font></a><br>
+        <td> <a  href="../../track/al152005.2005090800.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 08 </font></a><br>
+        <td> <a  href="../../track/al152005.2005090900.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 09 </font></a><br>
+        <td> <a  href="../../track/al152005.2005091000.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 10 </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="blue" face="Comic Sans MS"><strong>Ophelia </strong></font></a></td>
+        <td> <a  href="../../track/al162005.2005090700.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 07 </font></a><br>
+        <td> <a  href="../../track/al162005.2005090700.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 08 </font></a><br>
+        <td> <a  href="../../track/al162005.2005090700.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 09 </font></a><br>
+        <td> <a  href="../../track/al162005.2005091000.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 10 </font></a><br>
+        <td> <a  href="../../track/al162005.2005091100.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 11 </font></a><br>
+        <td> <a  href="../../track/al162005.2005091200.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 12 </font></a><br>
+        <td> <a  href="../../track/al162005.2005091300.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 13 </font></a><br>
+        <td> <a  href="../../track/al162005.2005091400.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 14 </font></a><br>
+        <td> <a  href="../../track/al162005.2005091500.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 15 </font></a><br>
+        <td> <a  href="../../track/al162005.2005091600.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 16 </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="blue" face="Comic Sans MS"><strong>Rita </strong></font></a></td>
+        <td> <a  href="../../track/al182005.2005091800.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 18 </font></a><br>
+        <td> <a  href="../../track/al182005.2005091900.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 19 </font></a><br>
+        <td> <a  href="../../track/al182005.2005092000.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 20 </font></a><br>
+        <td> <a  href="../../track/al182005.2005092100.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 21 </font></a><br>
+        <td> <a  href="../../track/al182005.2005092200.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 22 </font></a><br>
+        <td> <a  href="../../track/al182005.2005092300.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 23 </font></a><br>
+        <td> <a  href="../../track/al182005.2005092400.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 24 </font></a><br>
+        <td> <a  href="../../track/al182005.2005092500.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 25 </font></a><br>
+        <td> <a  href="../../track/tracks_Rita.t.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> <b>avg</b> </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="blue" face="Comic Sans MS"><strong>Stan </strong></font></a></td>
+        <td> <a  href="../../track/al202005.2005100200.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 02 </font></a><br>
+        <td> <a  href="../../track/al202005.2005100300.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 03 </font></a><br>
+        <td> <a  href="../../track/al202005.2005100400.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 04 </font></a><br>
+        <td> <a  href="../../track/al202005.2005100500.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 05 </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="blue" face="Comic Sans MS"><strong>Vince </strong></font></a></td>
+        <td> <a  href="../../track/al232005.2005100818.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 08 </font></a><br>
+        <td> <a  href="../../track/al232005.2005100900.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 09 </font></a><br>
+        <td> <a  href="../../track/al232005.2005101000.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 10 </font></a><br>
+        <td> <a  href="../../track/al232005.2005101100.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 11 </font></a><br>
+    </tr>
+    <tr>
+        <td> <font size=2 color="blue" face="Comic Sans MS"><strong>Wilma </strong></font></a></td>
+        <td> <a  href="../../track/al242005.2005101500.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 15 </font></a><br>
+        <td> <a  href="../../track/al242005.2005101600.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 16 </font></a><br>
+        <td> <a  href="../../track/al242005.2005101700.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 17 </font></a><br>
+        <td> <a  href="../../track/al242005.2005101800.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 18 </font></a><br>
+        <td> <a  href="../../track/al242005.2005101900.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 19 </font></a><br>
+        <td> <a  href="../../track/al242005.2005102000.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 20 </font></a><br>
+        <td> <a  href="../../track/al242005.2005102100.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 21 </font></a><br>
+        <td> <a  href="../../track/al242005.2005102200.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 22 </font></a><br>
+        <td> <a  href="../../track/al242005.2005102300.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 23 </font></a><br>
+        <td> <a  href="../../track/al242005.2005102400.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 24 </font></a><br>
+        <td> <a  href="../../track/al242005.2005102500.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> 25 </font></a><br>
+        <td> <a  href="../../track/tracks_Wilma.t.gif" onClick="return popup(this, 'frame4')"   <font size=2 face="Comic Sans MS"> <b>avg</b> </font></a><br>
+    </tr>
+</table>
+
+
+-------------------------------------------->
+
+
+</center></div>
+</body>
+</html>
+
