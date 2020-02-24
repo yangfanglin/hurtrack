@@ -1,27 +1,27 @@
 #!/bin/ksh
 set -x
 
-year=${1:-2018}
+year=${1:-2019}
 mkdir $year
 cd $year ||exit 8
 
 
 #Atlantic and Eastern Pacific
-adeck=/nhc/noscrub/data/atcf-noaa/aid_nws
+adeck=/gpfs/tp1//nhc/noscrub/data/atcf-noaa/aid_nws
 cp -p $adeck/aal*${year}* .
 cp -p $adeck/acp*${year}* .
 cp -p $adeck/aep*${year}* .
 
-bdeck=/nhc/noscrub/data/atcf-noaa/btk
+bdeck=/gpfs/tp1//nhc/noscrub/data/atcf-noaa/btk
 cp -p $bdeck/bal*${year}* .
 cp -p $bdeck/bcp*${year}* .
 cp -p $bdeck/bep*${year}* .
 
 #West and central Pacific:
-adeck=/nhc/noscrub/data/atcf-navy/aid
+adeck=/gpfs/tp1//nhc/noscrub/data/atcf-navy/aid
 cp -p $adeck/awp*${year}* .
 
-bdeck=/nhc/noscrub/data/atcf-navy/btk
+bdeck=/gpfs/tp1//nhc/noscrub/data/atcf-navy/btk
 cp -p $bdeck/bwp*${year}* .
 
 
