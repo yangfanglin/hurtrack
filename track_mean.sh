@@ -6,33 +6,26 @@ set -x
 ## Fanglin Yang, March 2013: Generalized for running on WCOSS and THEIA                                   
 
 #-------------------------------------------------------------------------------------
-export expdir=/gpfs/dell2/emc/modeling/noscrub/emc.glopara/archive       ;#experiment data archive directory
-export mdlist="prfv3rt1"                    ;#experiment names
-export mdplot="FY19"                          ;#names to be shown on plots, limitted to 4 letters
-export DATEST=20180520                             ;#forecast starting date
-export DATEND=20181128                             ;#forecast ending date
-export OCEAN="AL EP WP"                         ;#basin, AL-Atlantic, EP-Eastern Pacific, WP-Western Pacific
-export cyc="00 06 12 18"                           ;#forecast cycles to be included in verification        
-export doftp="YES"                                 ;#whether or not sent maps to ftpdir
+export expdir=/gpfs/dell6/emc/modeling/noscrub/emc.glopara/archive       ;#experiment data archive directory
+export mdlist="v16retro2"                                                ;#experiment names
+export mdplot="RTO2"                                                     ;#names to be shown on plots, limitted to 4 letters
+export DATEST=20190624                                                   ;#forecast starting date
+export DATEND=20190728                                                   ;#forecast ending date
+export OCEAN="AL EP WP"                                                  ;#basin, AL-Atlantic, EP-Eastern Pacific, WP-Western Pacific
+export cyc="00 06 12 18"                                                 ;#forecast cycles to be included in verification        
+export doftp="YES"                                                       ;#whether or not sent maps to ftpdir
 export webhostid=emc.glopara
 export webhost=emcrzdm.ncep.noaa.gov
-export ftpdir=/home/people/emc/www/htdocs/gmb/$webhostid/vsdb/prfv3rt1
-machine=WCOSS
+export ftpdir=/home/people/emc/www/htdocs/gmb/$webhostid/vsdb/v16retro2
 
 #-------------------------------------------------------------------------------------
 #---------------------------------------------------------
 #---Most likely you do not need to change anything below--
 #---------------------------------------------------------
 #-------------------------------------------------------------------------------------
-if [ $machine = THEIA ]; then
- export scrdir=/scratch4/NCEPDEV/global/save/Fanglin.Yang/VRFY/hurtrack
- export STMP="/scratch4/NCEPDEV/stmp3"
- export NDATE=/scratch4/NCEPDEV/global/save/Fanglin.Yang/VRFY/vsdb/nwprod/util/exec/ndate
-elif [ $machine = WCOSS ]; then
- export scrdir=/global/save/Fanglin.Yang/VRFY/hurtrack
- export STMP="/stmpd2"
- export NDATE=/nwprod/util/exec/ndate
-fi
+export scrdir=/gpfs/dell2/emc/modeling/noscrub/Fanglin.Yang/VRFY/hurtrack
+export STMP="/gpfs/dell3/stmp"
+export NDATE=/gpfs/dell1/nco/ops/nwprod/prod_util.v1.1.0/exec/ips/ndate
 export rundir=${rundir:-$STMP/$LOGNAME/track}
 mkdir -p ${rundir}; cd $rundir ||exit 8
 
@@ -117,12 +110,7 @@ nameold=`echo $nameold |tr "[a-z]" "[A-Z]" `
 namenew=${mdpt[$n]} ; n=$((n+1))
 namenew=`echo $namenew |tr "[a-z]" "[A-Z]" `
 export newlist=${newlist}"${namenew} "           ;#donot delete the space at the end
-
 dump=.gfs.
-if [ $exp = fim ]; then 
- dump=.fim.
- nameold=" F8C"
-fi
 
 outfile=${execdir}/atcfunix.$exp.$yearlabel
 if [ -s $outfile ]; then rm $outfile; fi
@@ -231,7 +219,7 @@ cat << EOF >ftpin
   cd track
   binary
   promt
-  mput tracks*.gif
+  mput tracks*.png
   put tracks_al.t.txt 
   put tracks_ep.t.txt 
   put tracks_wp.t.txt 
@@ -262,7 +250,7 @@ exit
 ## save tracks 
 savedir=${scrdir}/arch_trak/${mdname[1]}$yearlabel
 mkdir -p $savedir
-cp ${execdir}/*.gif ${savedir}/.
+cp ${execdir}/*.png ${savedir}/.
 cp ${execdir}/a*dat ${savedir}/.
 cp ${execdir}/b*dat ${savedir}/.
 cp ${execdir}/atcfunix* ${savedir}/.

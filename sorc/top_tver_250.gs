@@ -22,7 +22,7 @@ topyincr = 50
 
 *------------------------------------------------------*
 'open '_fname'.ctl'
-'enable print '_fname'.meta'
+'enable gxprint '_fname'.meta'
 'set display color white'
 'clear'
 
@@ -158,10 +158,10 @@ endwhile
     rc = readsig(sigfile)
     rc = plotsig(xl,ylo,hsiz,vsiz)
 
-'print'
-'disable print'
+'gxprint'
+'disable gxprint'
 
-'printim '_fname'.gif x766 y990'
+'printim '_fname'.png x766 y990'
 'quit'
 
 *---------------------------------------------------*

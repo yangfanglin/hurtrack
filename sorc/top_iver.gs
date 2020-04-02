@@ -16,13 +16,13 @@ _topylabel = 'Average Intensity Error (knts)'
 * Set the upper and lower y-axis bounds for the 
 * top and bottom plots....
 
-tvrhi  = 50 
-tvrlo  =   5
+tvrhi  = 40 
+tvrlo  =   0
 topyincr = 5
 
 *------------------------------------------------------*
 'open '_fname'.ctl'
-'enable print '_fname'.meta'
+'enable gxprint '_fname'.meta'
 'set display color white'
 'clear'
 
@@ -158,10 +158,10 @@ endwhile
     rc = readsig(sigfile)
     rc = plotsig(xl,ylo,hsiz,vsiz)
 
-'print'
-'disable print'
+'gxprint'
+'disable gxprint'
 
-'printim '_fname'.gif x766 y990'
+'printim '_fname'.png x766 y990'
 'quit'
 
 *---------------------------------------------------*
