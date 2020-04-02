@@ -72,25 +72,20 @@ export year=$years
 tpctrack=${execdir}/tpctrack           ;#place to hold HPC original track data
 mkdir -p $tpctrack
 
+
 #TPC Atlantic and Eastern Pacific tracks
-if [ -s /nhc/noscrub/data/atcf-noaa/aid_nws/aal01${year}.dat ]; then
+if [ -s /nhc/noscrub/data/atcf-noaa/aid_nws/aep01${year}.dat ]; then
  tpcdata=/nhc/noscrub/data/atcf-noaa
- cp ${tpcdata}/aid_nws/aal*${year}*.dat  ${tpctrack}/.
- cp ${tpcdata}/btk/bal*${year}*.dat      ${tpctrack}/.
-elif [ -s $scrdir/tpctrack/${year}/aal01${year}.dat ]; then
+ cp ${tpcdata}/aid_nws/aep*${year}*.dat  ${tpctrack}/.
+ cp ${tpcdata}/btk/bep*${year}*.dat      ${tpctrack}/.
+elif [ -s $scrdir/tpctrack/${year}/aep01${year}.dat ]; then
  tpcdata=$scrdir/tpctrack
- cp ${tpcdata}/${year}/aal*.dat   ${tpctrack}/.
- cp ${tpcdata}/${year}/bal*.dat   ${tpctrack}/.
+ cp ${tpcdata}/${year}/aep*.dat   ${tpctrack}/.
+ cp ${tpcdata}/${year}/bep*.dat   ${tpctrack}/.
 else
  echo" HPC track not found, exit"
  exit 8
 fi
-
-#JTWC Western Pacific tracks
-#jtwcdata=/nhc/noscrub/data/atcf-navy
-#cp ${jtwcdata}/aid/awp*${year}.dat   ${tpctrack}/.
-#cp ${jtwcdata}/btk/bwp*${year}.dat   ${tpctrack}/.
-
 
 #------------------------------------------------------------------------
 #  insert experiment track to TPC track  for all runs and for all BASINs
