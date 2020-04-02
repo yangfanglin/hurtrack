@@ -5,23 +5,24 @@ year=${1:-2019}
 mkdir $year
 cd $year ||exit 8
 
+NHC=/gpfs/hps3/nhc/noscrub/data
 
 #Atlantic and Eastern Pacific
-adeck=/gpfs/tp1//nhc/noscrub/data/atcf-noaa/aid_nws
+adeck=$NHC/atcf-noaa/aid_nws
 cp -p $adeck/aal*${year}* .
 cp -p $adeck/acp*${year}* .
 cp -p $adeck/aep*${year}* .
 
-bdeck=/gpfs/tp1//nhc/noscrub/data/atcf-noaa/btk
+bdeck=$NHC/atcf-noaa/btk
 cp -p $bdeck/bal*${year}* .
 cp -p $bdeck/bcp*${year}* .
 cp -p $bdeck/bep*${year}* .
 
 #West and central Pacific:
-adeck=/gpfs/tp1//nhc/noscrub/data/atcf-navy/aid
+adeck=$NHC/atcf-navy/aid
 cp -p $adeck/awp*${year}* .
 
-bdeck=/gpfs/tp1//nhc/noscrub/data/atcf-navy/btk
+bdeck=$NHC/atcf-navy/btk
 cp -p $bdeck/bwp*${year}* .
 
 
