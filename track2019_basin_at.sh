@@ -7,13 +7,13 @@ set -x
 
 #-------------------------------------------------------------------------------------
 export expdir=/gpfs/dell6/emc/modeling/noscrub/emc.glopara/archive 
-export mdlist="v16retro2"                    ;#experiment names
-export mdplot="RTO2"                         ;#names to be shown on plots, limitted to 4 letters
+export mdlist="v16retro2 v16retro2b"                    ;#experiment names
+export mdplot="RTO2 RT2B"                         ;#names to be shown on plots, limitted to 4 letters
 export cyc="00 06 12 18"                     ;#forecast cycles to be included in verification
 export doftp="YES"                           ;#whether or not sent maps to ftpdir
 export webhostid=emc.glopara       
 export webhost=emcrzdm.ncep.noaa.gov
-export ftpdir=/home/people/emc/www/htdocs/gmb/$webhostid/vsdb/v16retro2
+export ftpdir=/home/people/emc/www/htdocs/gmb/$webhostid/vsdb/v16retro2b
 
 #-------------------------------------------------------------------------------------
 #---------------------------------------------------------
