@@ -7,13 +7,13 @@ set -x
 
 #-------------------------------------------------------------------------------------
 export expdir=/gpfs/dell6/emc/modeling/noscrub/emc.glopara/archive 
-export mdlist="v16retro2 v16retro2b"                    ;#experiment names
-export mdplot="RTO2 RT2B"                         ;#names to be shown on plots, limitted to 4 letters
+export mdlist="v16retro2c"                    ;#experiment names
+export mdplot="RT2C"                         ;#names to be shown on plots, limitted to 4 letters
 export cyc="00 06 12 18"                     ;#forecast cycles to be included in verification
 export doftp="YES"                           ;#whether or not sent maps to ftpdir
 export webhostid=emc.glopara       
 export webhost=emcrzdm.ncep.noaa.gov
-export ftpdir=/home/people/emc/www/htdocs/gmb/$webhostid/vsdb/v16retro2b
+export ftpdir=/home/people/emc/www/htdocs/gmb/$webhostid/vsdb/v16retro2c_final
 
 #-------------------------------------------------------------------------------------
 #---------------------------------------------------------
@@ -29,7 +29,7 @@ mkdir -p ${rundir}; cd $rundir || exit 8
 
 #==================================================================
 #for storm in Andrea  Barry  Chantal  Dorian  Erin   Fernand   Gabrielle   Humberto   Imelda   Jerry   Karen  Lorenzo   Melissa  Nestor  Olga Pablo   Rebekah   Sebastien ;do
-for storm in Barry ;do
+for storm in Dorian  Erin   Fernand Gabrielle; do
  case $storm in
   Andrea)     code1=al012019.dat; DATEST=20190520; DATEND=20190521;;
   Barry)      code1=al022019.dat; DATEST=20190711; DATEND=20190715;;
