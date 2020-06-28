@@ -7,16 +7,16 @@ set -x
 
 #-------------------------------------------------------------------------------------
 export expdir=/gpfs/dell6/emc/modeling/noscrub/emc.glopara/archive       ;#experiment data archive directory
-export mdlist="v16retro2c"                                                ;#experiment names
-export mdplot="RT2C"                                                     ;#names to be shown on plots, limitted to 4 letters
-export DATEST=20190823                                                   ;#forecast starting date
-export DATEND=20190907                                                   ;#forecast ending date
+export mdlist="v16retro1e"                                                ;#experiment names
+export mdplot="V16E"                                                     ;#names to be shown on plots, limitted to 4 letters
+export DATEST=20190601                                                   ;#forecast starting date
+export DATEND=20190721                                                   ;#forecast ending date
 export OCEAN="AL EP WP"                                                  ;#basin, AL-Atlantic, EP-Eastern Pacific, WP-Western Pacific
 export cyc="00 06 12 18"                                                 ;#forecast cycles to be included in verification        
 export doftp="YES"                                                       ;#whether or not sent maps to ftpdir
 export webhostid=emc.glopara
 export webhost=emcrzdm.ncep.noaa.gov
-export ftpdir=/home/people/emc/www/htdocs/gmb/$webhostid/vsdb/v16retro2c_final
+export ftpdir=/home/people/emc/www/htdocs/gmb/$webhostid/vsdb/v16retro1e            
 
 #-------------------------------------------------------------------------------------
 #---------------------------------------------------------
