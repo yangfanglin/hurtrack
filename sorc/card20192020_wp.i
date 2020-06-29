@@ -1,6 +1,6 @@
 Input file for verification program, nrl_truth 
 ---------------------------------------------- 
-process track, intensity or wind radii  : track
+process track, intensity or wind radii  : intensity 
 process in the units                    : english
 print individual storm averages         : .true. 
 print all storm errors processed        : .true. 
@@ -22,69 +22,69 @@ process errors for initial 18 hr        : .true.
 # of development levels (max=20)        :  5 
 list of development levels to process   : listed on next line 
 TD TS TY TC HU 
-# of techniques to process (max=12)     : NUMTRC 
+# of techniques to process (max=12)     : NUMINT 
 list of technique names to process      : listed on next line 
 MODLIST
 list of storm IDs to be processed       : listed below 
-wp012015
-wp022015
-wp032015
-wp042015
-wp052015
-wp062015
-wp072015
-wp082015
-wp092015
-wp102015
-wp112015
-wp122015
-wp132015
-wp142015
-wp152015
-wp162015
-wp172015
-wp182015
-wp192015
-wp202015
-wp212015
-wp222015
-wp232015
-wp242015
-wp252015
-wp262015
-wp272015
-wp282015
-wp292015
-wp302015
-wp312015
-wp322015
-wp012016
-wp022016
-wp032016
-wp042016
-wp052016
-wp062016
-wp072016
-wp082016
-wp092016
-wp102016
-wp112016
-wp122016
-wp132016
-wp142016
-wp152016
-wp162016
-wp172016
-wp182016
-wp192016
-wp202016
-wp212016
-wp222016
-wp232016
-wp242016
-wp252016
-wp262016
-wp272016
-wp282016
-wp292016
+wp012019
+wp022019
+wp032019
+wp042019
+wp052019
+wp062019
+wp072019
+wp082019
+wp092019
+wp102019
+wp112019
+wp122019
+wp132019
+wp142019
+wp152019
+wp162019
+wp172019
+wp182019
+wp192019
+wp202019
+wp212019
+wp222019
+wp232019
+wp242019
+wp252019
+wp262019
+wp272019
+wp282019
+wp292019
+wp302019
+wp312019
+wp322019
+wp012020
+wp022020
+wp032020
+wp042020
+wp052020
+wp062020
+wp072020
+wp082020
+wp092020
+wp102020
+wp112020
+wp122020
+wp132020
+wp142020
+wp152020
+wp162020
+wp172020
+wp182020
+wp192020
+wp202020
+wp212020
+wp222020
+wp232020
+wp242020
+wp252020
+wp262020
+wp272020
+wp282020
+wp292020
 
