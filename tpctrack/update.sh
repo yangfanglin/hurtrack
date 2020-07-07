@@ -20,10 +20,10 @@ cp -p $bdeck/bep*${year}* .
 
 #West and central Pacific:
 adeck=$NHC/atcf-navy/aid
-cp -p $adeck/awp*${year}* .
+cp -p $adeck/awp*${year}.dat .
 
 bdeck=$NHC/atcf-navy/btk
-cp -p $bdeck/bwp*${year}* .
+cp -p $bdeck/bwp*${year}.dat .
 
 
 exit

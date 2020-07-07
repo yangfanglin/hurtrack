@@ -2,7 +2,7 @@
 set -x
 
 #for year in 2000 2001 2002 2003 2004 ; do
-for year in 2019  ; do
+for year in 2020  ; do
 
 sed "s?2013?$year?g" card2013_al.t >xt
 mv xt card${year}_al.t
