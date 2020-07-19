@@ -1,7 +1,7 @@
 #!/bin/ksh
 set -x
 
-year=${1:-2019}
+year=${1:-2020}
 mkdir $year
 cd $year ||exit 8
 
