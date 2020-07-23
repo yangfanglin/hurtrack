@@ -17,21 +17,19 @@ echo " "
 #-----------------------------------------------
 chost=`echo $(hostname) |cut -c 1-1`
 
-export exp=gfs2017 
+export exp=v16rt2  
 
-if [ $chost = f ]; then
- export gradsibmv8=/apps/grads/2.0.a9/bin/grads 
- export GADDIR=/apps/grads/2.0.1a/data
- export scrdir=/scratch2/portfolios/NCEPDEV/global/save/Fanglin.Yang/VRFY/hurtrack/plot
- export netdir=/scratch2/portfolios/NCEPDEV/stmp/$LOGNAME/track/$exp/
-elif [ $chost = t -o $chost = g ]; then
- export gradsibmv8=/usrx/local/GrADS/2.0.2/bin/grads
- export GADDIR=/usrx/local/GrADS/2.0.2/lib
- export arcdir=/global/save/Fanglin.Yang/VRFY/hurtrack/arch_trak
- export scrdir=/global/save/Fanglin.Yang/VRFY/hurtrack/plot                
- #export netdir=/stmpd2/$LOGNAME/track/${exp}/
- export netdir=/stmpd2/Fanglin.Yang/track2498/prfv3rt1/
-fi
+#export gradsibmv8=/usrx/local/dev/packages/grads/2.2.0/bin/grads
+#export GADDIR=/usrx/local/dev/packages/grads/2.2.0/lib          
+
+#--works on Surge/Luna
+export gradsibmv8=/usrx/local/dev/GrADS/2.0.2/bin/grads              
+export GADDIR=/usrx/local/dev/GrADS/data                        
+export arcdir=/gpfs/dell2/emc/modeling/noscrub/Fanglin.Yang/VRFY/hurtrack/arch
+export scrdir=/gpfs/dell2/emc/modeling/noscrub/Fanglin.Yang/VRFY/hurtrack/plot
+
+#export netdir=/stmpd2/Fanglin.Yang/track2498/prfv3rt1/
+export netdir=/gpfs/dell3/stmp/Fanglin.Yang/track7083/Gonzalo/
 
 
 if [ ! -d $netdir ]; then mkdir -p $netdir; fi

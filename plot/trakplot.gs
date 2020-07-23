@@ -1062,7 +1062,7 @@ _freshcascade = no
 'draw button 126  0.85 4.00 'modelwid' 'modelhgt'   UKM'
 
 'draw button 129  0.30 1.50 'modelwid' 'modelhgt'  HWRF'
-'draw button 131  0.30 1.20 'modelwid' 'modelhgt'  FY17'
+'draw button 131  0.30 1.20 'modelwid' 'modelhgt'  V16E'
 'draw button 132  0.85 1.20 'modelwid' 'modelhgt'  FY19'
 *---------------------------
 
@@ -1860,7 +1860,7 @@ _modname.125 =  CMC
 _modname.126 =  UKM
 
 _modname.129 = HWRF
-_modname.131 = FY17
+_modname.131 = V16E 
 _modname.132 = FY19
 
 return
